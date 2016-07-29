@@ -1,0 +1,28 @@
+Simple code for dynamic array. In below code then array will become full of size we copy all element to new double size array(variable size array).sample code is below 
+
+public class DynamicArray {
+ static   int []increaseSizeOfArray(int []arr){
+          int []brr=new int[(arr.length*2)];
+          for (int i = 0; i < arr.length; i++) {
+         brr[i]=arr[i];     
+          }
+          return brr;
+     }
+public static void main(String[] args) {
+     int []arr=new int[5];
+      for (int i = 0; i < 11; i++) {
+          if (i<arr.length) {
+              arr[i]=i+100;
+          }
+          else {
+              arr=increaseSizeOfArray(arr);
+              arr[i]=i+100;
+          }        
+     }
+
+for (int i = 0; i < arr.length; i++) {
+     System.out.println("arr="+arr[i]);
+}    
+}
+
+}

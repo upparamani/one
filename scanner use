@@ -1,0 +1,60 @@
+package javaapplication1;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author 1
+ */
+public class JavaApplication1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("Welcome to Netbeans !");
+        System.out.println("this is second line");
+        
+        int x=5;
+        double y;       // double = float in java OO
+        
+        y=Math.sqrt(x);
+        
+        System.out.println("Square-root of " + x + " is " + y);
+        
+
+        Scanner user_input = new Scanner( System.in );
+        
+        String first_name;
+        System.out.print("Enter your first name: ");
+        first_name = user_input.next( );
+        
+        String family_name;
+        System.out.print("Enter your family name: ");
+        family_name = user_input.next( );
+        
+        String full_name;
+        full_name = first_name + " " + family_name;
+
+        System.out.println("You are " + full_name);
+        
+        int sum; //,a,b;
+        
+                      
+        System.out.println("Enter a and b ");
+        Scanner a = new Scanner( System.in );
+        int p = a.nextInt(); 
+        
+        Scanner b = new Scanner( System.in );
+        int q = b.nextInt();
+        
+        sum = p + q;
+        
+        System.out.println("The Sum is " + sum);
+        
+               
+    }
+    
+}
+
